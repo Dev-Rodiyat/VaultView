@@ -8,7 +8,7 @@ export default function Layout() {
     <div className="flex flex-col min-h-screen">
       <ScrollToTop />
       <Header />
-      <main className="pt-20 flex-1">
+      <main className="flex-1">
         <Outlet />
       </main>
       <Footer />
