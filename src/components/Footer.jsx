@@ -90,13 +90,13 @@ const Footer = () => {
                             <SubscribeCard />
                         </div>
 
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div className="flex items-center justify-center">
                             {Object.entries(footerLinks).map(([category, links]) => (
                                 <div key={category}>
                                     <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-6">
                                         {category}
                                     </h4>
-                                    <ul className="flex ">
+                                    <ul className="flex gap-4 sm:flex-row flex-col">
                                         {links.map((link, index) => (
                                             <li key={index}>
                                                 <a

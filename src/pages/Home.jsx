@@ -74,12 +74,9 @@ export default function Home() {
   ]
 
   return (
-    <main className="bg-slate-950 text-white overflow-x-hidden">
-      {/* Hero Section */}
+    <main className="bg-slate-950 text-white overflow-x-hidden pt-16">
       <section className="relative min-h-screen overflow-hidden">
-        {/* Dynamic Background */}
         <div className="pointer-events-none absolute inset-0">
-          {/* Animated gradient orbs */}
           <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-gradient-to-br from-violet-500/30 to-purple-600/30 blur-3xl animate-pulse" />
           <div
             className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-gradient-to-br from-cyan-500/30 to-blue-600/30 blur-3xl animate-pulse"
@@ -89,7 +86,6 @@ export default function Home() {
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 rounded-full bg-gradient-to-br from-pink-500/20 to-rose-600/20 blur-3xl animate-pulse"
             style={{ animationDelay: "2s" }}
           />
-          {/* Floating particles */}
           {[...Array(20)].map((_, i) => (
             <div
               key={i}
@@ -102,15 +98,13 @@ export default function Home() {
               }}
             />
           ))}
-          {/* Mesh gradient overlay */}
+
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)]" />
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:50px_50px]" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 pt-20 pb-16 md:pt-32 md:pb-24">
           <div className="flex flex-col lg:flex-row items-center gap-16">
-            {/* Left Content */}
             <div className="flex-1 text-center lg:text-left">
-              {/* Status Badge */}
               <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-violet-500/10 via-purple-500/10 to-cyan-500/10 border border-violet-500/20 backdrop-blur-xl mb-8 group hover:from-violet-500/20 hover:to-cyan-500/20 transition-all duration-500">
                 <div className="relative">
                   <Sparkles className="w-5 h-5 text-violet-400 group-hover:text-violet-300 transition-colors" />
@@ -123,7 +117,6 @@ export default function Home() {
                 </span>
                 <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               </div>
-              {/* Hero Heading */}
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.85] tracking-tight mb-10">
                 <span className="block text-white/90">Discover</span>
                 <span className="block bg-gradient-to-r from-violet-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
@@ -133,7 +126,6 @@ export default function Home() {
                   NFT Universe Reimagined
                 </span>
               </h1>
-              {/* Enhanced Subtitle */}
               <p className="text-xl md:text-2xl text-slate-300 max-w-2xl leading-relaxed mb-12">
                 Unlock the power of your digital assets with
                 <span className="text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-bold">
@@ -152,7 +144,6 @@ export default function Home() {
                 </span>
                 .
               </p>
-              {/* Enhanced Search */}
               <div className="mb-10">
                 <div className="flex flex-col sm:flex-row gap-4 max-w-3xl">
                   <div className="relative flex-1 group">
@@ -192,7 +183,6 @@ export default function Home() {
                   </div>
                 )}
               </div>
-              {/* Action Row */}
               <div className="flex flex-col sm:flex-row items-center gap-8 mb-14">
                 <button
                   onClick={tryDemo}
@@ -212,8 +202,7 @@ export default function Home() {
                   <span className="font-medium">No signup • Instant access • 100% secure</span>
                 </div>
               </div>
-              {/* Feature Highlights */}
-              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 {[
                   { icon: Activity, text: "Live Analytics", color: "from-violet-400 to-purple-400" },
                   { icon: Shield, text: "Zero Trust", color: "from-cyan-400 to-blue-400" },
@@ -235,21 +224,17 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            {/* Right Visual */}
             <div className="flex-1 max-w-2xl">
               <div className="relative">
-                {/* Main dashboard mockup */}
                 <div className="relative bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-xl rounded-3xl p-8 border border-slate-700/50 shadow-2xl hover:shadow-violet-500/20 transition-all duration-500 group">
-                  {/* Mock header */}
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center gap-3">
                       <div className="w-3 h-3 rounded-full bg-red-400" />
                       <div className="w-3 h-3 rounded-full bg-yellow-400" />
                       <div className="w-3 h-3 rounded-full bg-green-400" />
                     </div>
-                    <div className="text-xs text-slate-400 font-mono">vaultview.app</div>
+                    <div className="text-xs text-slate-400 font-mono">vaultview-tau.vercel.app</div>
                   </div>
-                  {/* NFT Grid */}
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     {[1, 2, 3, 4, 5, 6].map((i) => (
                       <div
@@ -259,7 +244,6 @@ export default function Home() {
                       />
                     ))}
                   </div>
-                  {/* Stats bars */}
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <div className="w-4 h-4 rounded-full bg-violet-400" />
@@ -289,10 +273,8 @@ export default function Home() {
                       <span className="text-xs text-slate-300 font-mono">+23.4%</span>
                     </div>
                   </div>
-                  {/* Hover glow */}
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-violet-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
-                {/* Floating elements */}
                 <div className="absolute -top-6 -right-6 w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center animate-bounce shadow-lg">
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
@@ -308,7 +290,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="relative py-24 md:py-32">
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/50 to-slate-950" />
         <div className="relative max-w-7xl mx-auto px-4">
@@ -341,25 +322,7 @@ export default function Home() {
                 title: "Smart Analytics",
                 desc: "AI-powered market analysis with predictive insights and advanced portfolio optimization tools.",
                 gradient: "from-pink-500 to-rose-600",
-              },
-              {
-                icon: Zap,
-                title: "Lightning Speed",
-                desc: "Built on modern architecture for instant loading and seamless navigation across all devices.",
-                gradient: "from-emerald-500 to-teal-600",
-              },
-              {
-                icon: Lock,
-                title: "Privacy First",
-                desc: "Zero-knowledge architecture ensures your data stays private while providing powerful features.",
-                gradient: "from-orange-500 to-red-600",
-              },
-              {
-                icon: Moon,
-                title: "Adaptive Design",
-                desc: "Intelligent theming that adapts to your preferences with smooth transitions and modern aesthetics.",
-                gradient: "from-indigo-500 to-purple-600",
-              },
+              }
             ].map((feature, index) => (
               <div
                 key={index}
@@ -379,7 +342,6 @@ export default function Home() {
                 <p className="text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors duration-300">
                   {feature.desc}
                 </p>
-                {/* Hover effect */}
                 <div
                   className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
                 />
@@ -389,7 +351,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works Section */}
       <section className="relative py-24 md:py-32">
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/30 to-slate-950" />
         <div className="relative max-w-7xl mx-auto px-4">
@@ -423,16 +384,13 @@ export default function Home() {
               },
             ].map((step, index) => (
               <div key={index} className="relative group text-center">
-                {/* Connection line */}
                 {index < 2 && (
                   <div className="hidden md:block absolute top-1/2 left-full w-full h-0.5 bg-gradient-to-r from-violet-500/50 to-cyan-500/50 transform -translate-y-1/2 z-0" />
                 )}
                 <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-8 border border-slate-700/50 hover:border-violet-500/50 transition-all duration-500 group-hover:transform group-hover:scale-105">
-                  {/* Step number */}
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-black text-xl mb-6 group-hover:from-cyan-600 group-hover:to-violet-600 transition-all duration-300">
                     {step.number}
                   </div>
-                  {/* Icon */}
                   <div className="inline-flex p-4 rounded-2xl bg-gradient-to-r from-violet-500/10 to-cyan-500/10 mb-6">
                     <step.icon className="w-8 h-8 text-violet-400 group-hover:text-cyan-400 transition-colors duration-300" />
                   </div>
@@ -442,7 +400,6 @@ export default function Home() {
                   <p className="text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors duration-300">
                     {step.desc}
                   </p>
-                  {/* Hover glow */}
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-violet-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               </div>
@@ -451,9 +408,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        {/* Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/80 to-slate-950" />
           <div className="absolute top-1/4 -left-40 h-80 w-80 rounded-full bg-gradient-to-br from-violet-500/10 to-purple-600/10 blur-3xl animate-pulse" />
@@ -481,24 +436,20 @@ export default function Home() {
                 key={index}
                 className="group relative bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-xl rounded-3xl p-8 border border-slate-700/50 hover:border-slate-600/50 transition-all duration-500 hover:transform hover:scale-105"
               >
-                {/* Quote icon */}
                 <div className="absolute -top-4 -left-4 w-8 h-8 rounded-2xl bg-gradient-to-r from-violet-600 to-purple-600 flex items-center justify-center group-hover:from-cyan-600 group-hover:to-blue-600 transition-all duration-300">
                   <Quote className="w-4 h-4 text-white" />
                 </div>
 
-                {/* Stars */}
                 <div className="flex items-center gap-1 mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
 
-                {/* Testimonial content */}
                 <p className="text-slate-300 leading-relaxed mb-8 group-hover:text-slate-200 transition-colors duration-300">
                   "{testimonial.content}"
                 </p>
 
-                {/* User info */}
                 <div className="flex items-center gap-4">
                   <div className="relative">
                     <img
@@ -520,7 +471,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Hover glow */}
                 <div
                   className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${testimonial.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
                 />
@@ -528,7 +478,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Stats row */}
           <div className="flex flex-wrap items-center justify-center gap-8 mt-16 pt-16 border-t border-slate-800">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-black bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent mb-2">
@@ -558,9 +507,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        {/* Dynamic background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-slate-900 to-cyan-900/20" />
           <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-gradient-to-br from-violet-500/20 to-purple-600/20 blur-3xl animate-pulse" />
@@ -598,7 +545,6 @@ export default function Home() {
                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
             </div>
-            {/* Trust indicators */}
             <div className="flex items-center justify-center gap-8 mt-12 text-sm text-slate-400">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-emerald-400" />
@@ -613,7 +559,6 @@ export default function Home() {
                 <span>99.9% Uptime</span>
               </div>
             </div>
-            {/* Background glow */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-violet-500/5 to-cyan-500/5 opacity-50" />
           </div>
         </div>
