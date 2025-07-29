@@ -63,7 +63,7 @@ export default function SubscribeCard() {
                 Get the latest NFT insights and platform updates
             </p>
 
-            <form onSubmit={handleSubscribe} className="flex gap-3">
+            <form onSubmit={handleSubscribe} className="flex gap-3 flex-col sm:flex-row">
                 <input type="text" name="_gotcha" className="hidden" tabIndex="-1" autoComplete="off" />
 
                 <input

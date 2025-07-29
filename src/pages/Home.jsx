@@ -47,7 +47,7 @@ export default function Home() {
     {
       name: "Alex Chen",
       role: "NFT Collector",
-      avatar: "/placeholder.svg?height=60&width=60",
+      avatar: "/VaultView.png",
       content:
         "VaultView completely transformed how I manage my NFT portfolio. The AI insights helped me identify undervalued pieces that increased 300% in value.",
       rating: 5,
@@ -56,43 +56,16 @@ export default function Home() {
     {
       name: "Sarah Martinez",
       role: "Digital Artist",
-      avatar: "/placeholder.svg?height=60&width=60",
+      avatar: "/VaultView.png",
       content:
         "As an artist, seeing my work displayed in VaultView's immersive gallery is breathtaking. It's like having a personal museum for digital art.",
       rating: 5,
       gradient: "from-cyan-500 to-blue-600",
     },
     {
-      name: "Marcus Thompson",
-      role: "Crypto Investor",
-      avatar: "/placeholder.svg?height=60&width=60",
-      content:
-        "The real-time analytics and portfolio tracking features are unmatched. I can make informed decisions faster than ever before.",
-      rating: 5,
-      gradient: "from-pink-500 to-rose-600",
-    },
-    {
-      name: "Elena Rodriguez",
-      role: "Gallery Owner",
-      avatar: "/placeholder.svg?height=60&width=60",
-      content:
-        "VaultView's privacy-first approach gives me confidence. I can showcase my collection without compromising sensitive information.",
-      rating: 5,
-      gradient: "from-emerald-500 to-teal-600",
-    },
-    {
-      name: "David Kim",
-      role: "Tech Entrepreneur",
-      avatar: "/placeholder.svg?height=60&width=60",
-      content:
-        "The lightning-fast performance and intuitive design make portfolio management effortless. It's the future of NFT analytics.",
-      rating: 5,
-      gradient: "from-orange-500 to-red-600",
-    },
-    {
       name: "Zoe Williams",
       role: "DeFi Strategist",
-      avatar: "/placeholder.svg?height=60&width=60",
+      avatar: "/VaultView.png",
       content:
         "VaultView's holistic approach to NFT analysis has become essential to my investment strategy. The insights are incredibly valuable.",
       rating: 5,
